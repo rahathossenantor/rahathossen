@@ -118,7 +118,7 @@ const Hero = () => {
           className="absolute inset-0 -z-30 opacity-5"
         ></div>
 
-        {
+        {/* {
           rings.map((ring) => (
             <div key={ring.id} className={`hero-ring size-[${ring.size}px]`}></div>
           ))
@@ -138,7 +138,43 @@ const Hero = () => {
               }
             </HeroOrbit>
           ))
-        }
+        } */}
+
+        <div className="hero-ring size-[620px]"></div>
+        <div className="hero-ring size-[820px]"></div>
+        <div className="hero-ring size-[1020px]"></div>
+        <div className="hero-ring size-[1220px]"></div>
+
+        <HeroOrbit orbit={800} rotate={-72}>
+          <Star className="size-28 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit orbit={500} rotate={20}>
+          <Star className="size-12 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit orbit={590} rotate={98}>
+          <Star className="size-8 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit orbit={430} rotate={-14}>
+          <Sparkle className="size-8 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit orbit={440} rotate={79}>
+          <Sparkle className="size-5 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit orbit={530} rotate={178}>
+          <Sparkle className="size-10 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit orbit={710} rotate={144}>
+          <Sparkle className="size-14 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit orbit={720} rotate={85}>
+          <div className="size-3 rounded-full bg-emerald-300/20"></div>
+        </HeroOrbit>
+        <HeroOrbit orbit={520} rotate={-41}>
+          <div className="size-2 rounded-full bg-emerald-300/20"></div>
+        </HeroOrbit>
+        <HeroOrbit orbit={650} rotate={-5}>
+          <div className="size-2 rounded-full bg-emerald-300/20"></div>
+        </HeroOrbit>
 
       </div>
 
