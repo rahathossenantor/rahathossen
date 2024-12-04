@@ -53,7 +53,7 @@ const Projects = () => {
     <section className="pb-16 lg:py-24">
       <div className="container">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">Real World Projects</p>
+          <p className="uppercase font-semibold tracking-widest custom-gradient-bg text-transparent bg-clip-text text-center">Real World Projects</p>
         </div>
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
         <p className="text-center md:text-lg lg:text-xl max-w-md mx-auto text-white/60 mt-4">See how I transformed concepts into engaging digital experiences.</p>
@@ -68,7 +68,7 @@ const Projects = () => {
               ></div>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="uppercase font-bold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-sm text-transparent bg-clip-text inline-flex gap-2">
+                  <div className="uppercase font-bold tracking-widest custom-gradient-bg text-sm text-transparent bg-clip-text inline-flex gap-2">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
