@@ -1,3 +1,7 @@
-export const AboutSection = () => {
-  return <div>About Section</div>;
+const About = () => {
+  return (
+    <div></div>
+  );
 };
+
+export default About;

@@ -3,6 +3,7 @@ import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import Tape from "@/sections/Tape";
 import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Projects />
       <Tape />
       <Contact />
+      <Footer />
     </div>
   );
 };

@@ -124,7 +124,7 @@ const Hero = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="text-3xl md:text-5xl text-center font-serif mt-8 tracking-wide">Building Exceptional User Experiences</h1>
-          <p className="text-center mt-4 text-white/60 md:text-lg">I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project</p>
+          <p className="text-center mt-4 text-white/60 md:text-lg">I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
           <button className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl">
@@ -133,7 +133,7 @@ const Hero = () => {
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
+            <a href="https://www.linkedin.com/in/rahathossenantor" target="_blank" className="font-semibold">Let&apos;s Connect</a>
           </button>
         </div>
       </div>
