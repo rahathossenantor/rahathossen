@@ -112,7 +112,7 @@ const Hero = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
 
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none">
         <div
           style={{ backgroundImage: `url(${grain.src})` }}
           className="absolute inset-0 -z-30 opacity-5"
@@ -139,44 +139,6 @@ const Hero = () => {
             </HeroOrbit>
           ))
         }
-
-        {/* <div className="hero-ring size-[620px]"></div>
-        <div className="hero-ring size-[820px]"></div>
-        <div className="hero-ring size-[1020px]"></div>
-        <div className="hero-ring size-[1220px]"></div> */}
-
-        {/* <HeroOrbit orbit={800} rotate={-72}>
-          <Star className="size-28 text-emerald-300" />
-        </HeroOrbit>
-        <HeroOrbit orbit={500} rotate={20}>
-          <Star className="size-12 text-emerald-300" />
-        </HeroOrbit>
-        <HeroOrbit orbit={590} rotate={98}>
-          <Star className="size-8 text-emerald-300" />
-        </HeroOrbit>
-
-        <HeroOrbit orbit={430} rotate={-14}>
-          <Sparkle className="size-8 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit orbit={440} rotate={79}>
-          <Sparkle className="size-5 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit orbit={530} rotate={178}>
-          <Sparkle className="size-10 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit orbit={710} rotate={144}>
-          <Sparkle className="size-14 text-emerald-300/20" />
-        </HeroOrbit>
-
-        <HeroOrbit orbit={720} rotate={85}>
-          <div className="size-3 rounded-full bg-emerald-300/20"></div>
-        </HeroOrbit>
-        <HeroOrbit orbit={520} rotate={-41}>
-          <div className="size-2 rounded-full bg-emerald-300/20"></div>
-        </HeroOrbit>
-        <HeroOrbit orbit={650} rotate={-5}>
-          <div className="size-2 rounded-full bg-emerald-300/20"></div>
-        </HeroOrbit> */}
       </div>
 
       <div className="container">
@@ -192,11 +154,11 @@ const Hero = () => {
           <p className="text-center mt-4 text-white/60 md:text-lg">I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
-          <button className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl z-10">
+          <button className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10">
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
           </button>
