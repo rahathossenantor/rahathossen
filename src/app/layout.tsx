@@ -15,7 +15,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "Rahat Hossen",
-  description: "Personal website of Rahat Hossen",
+  description: "This is Md Rahat Hossen Antor, a passionate Frontend focused FullStack Web Application Developer with 03 (Three) years (2022 - present) of learning and project building experiences.",
 };
 
 const RootLayout = ({
