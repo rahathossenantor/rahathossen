@@ -3,24 +3,24 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 const socials = [
   {
     id: 1,
-    name: "Facebook",
-    link: "#"
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/rahathossenantor"
   },
   {
     id: 2,
-    name: "Twitter",
-    link: "#"
+    name: "GitHub",
+    link: "https://github.com/rahathossenantor"
   },
   {
     id: 3,
-    name: "Instagram",
-    link: "#"
+    name: "Facebook",
+    link: "https://www.facebook.com/rahathossenantor"
   },
   {
     id: 4,
-    name: "Linkedin",
+    name: "Instagram",
     link: "#"
-  }
+  },
 ];
 
 const Footer = () => {
