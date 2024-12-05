@@ -19,7 +19,7 @@ const socials = [
   {
     id: 4,
     name: "Instagram",
-    link: "#"
+    link: "https://www.instagram.com/rahathossenantor"
   },
 ];
 
