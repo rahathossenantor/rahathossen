@@ -59,8 +59,14 @@ const Projects = () => {
           description="See how I transformed concepts into engaging digital experiences."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
-            <Card key={project.id} className="px-8 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16 pb-0">
+          {portfolioProjects.map((project, idx) => (
+            <Card
+              key={project.id}
+              className="px-8 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16 pb-0 sticky top-16"
+              style={{
+                top: `calc(62px + ${idx * 30}px)`,
+              }}
+            >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="uppercase font-bold tracking-widest custom-gradient-bg text-sm text-transparent bg-clip-text inline-flex gap-2">
