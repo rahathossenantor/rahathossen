@@ -3,7 +3,7 @@ import grain from "@/assets/images/grain.jpg";
 
 const Contact = () => {
   return (
-    <div className="pt-12 pb-16 lg:pt-20 lg:pb-24">
+    <section className="pt-12 pb-16 lg:pt-20 lg:pb-24" id="contacts">
       <div className="container">
         <div className="custom-gradient-bg text-gray-900 py-8 px-10 text-center md:text-left rounded-xl relative overflow-hidden z-0">
           <div
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
