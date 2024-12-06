@@ -12,7 +12,7 @@
     }
 
     .custom-gradient-bg {
-        @apply bg-gradient-to-r from-emerald-300 to-sky-400;
+        @apply from-emerald-300 to-sky-400;
     }
 }
 

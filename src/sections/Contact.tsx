@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="pt-12 pb-16 lg:pt-20 lg:pb-24" id="contacts">
       <div className="container">
-        <div className="custom-gradient-bg text-gray-900 py-8 px-10 text-center md:text-left rounded-xl relative overflow-hidden z-0">
+        <div className="bg-gradient-to-r custom-gradient-bg text-gray-900 py-8 px-10 text-center md:text-left rounded-xl relative overflow-hidden z-0">
           <div
             className="absolute inset-0 opacity-5 -z-10"
             style={{ backgroundImage: `url(${grain.src})` }}

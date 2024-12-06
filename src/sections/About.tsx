@@ -6,58 +6,7 @@ import map from "@/assets/images/map.png";
 import memoji from "@/assets/images/memoji-smile.png";
 import AboutCardHeader from "@/components/AboutCardHeader";
 import Technologies from "@/components/Technologies";
-
-const hobbies = [
-  {
-    id: 1,
-    name: "Painting",
-    emoji: "🎨",
-    top: "5%",
-    left: "5%"
-  },
-  {
-    id: 2,
-    name: "Photography",
-    emoji: "📸",
-    top: "5%",
-    left: "50%"
-  },
-  {
-    id: 3,
-    name: "Hiking",
-    emoji: "🥾",
-    top: "40%",
-    left: "35%"
-  },
-  {
-    id: 4,
-    name: "Gaming",
-    emoji: "🎮",
-    top: "35%",
-    left: "10%"
-  },
-  {
-    id: 5,
-    name: "Music",
-    emoji: "🎵",
-    top: "45%",
-    left: "70%"
-  },
-  {
-    id: 6,
-    name: "Fitness",
-    emoji: "🏋️‍♂️",
-    top: "65%",
-    left: "5%"
-  },
-  {
-    id: 7,
-    name: "Reading",
-    emoji: "📚",
-    top: "70%",
-    left: "45%"
-  }
-];
+import Hobbies from "@/components/Hobbies";
 
 const About = () => {
   return (
@@ -84,10 +33,12 @@ const About = () => {
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
               />
-              <Technologies />
+              <Technologies
+                wrapperClassName="animate-move-left [animation-duration:30s]"
+              />
               <Technologies
                 className="mt-6"
-                wrapperClassName="-translate-x-1/2"
+                wrapperClassName="animate-move-right [animation-duration:30s]"
               />
             </Card>
           </div>
@@ -98,23 +49,7 @@ const About = () => {
                 description="Explore my interests and hobbies beyond the digital realm."
                 className="p-6"
               />
-              <div className="relative flex-1">
-                {
-                  hobbies.map(hobby => (
-                    <div
-                      key={hobby.id}
-                      className="inline-flex items-center gap-2 px-6 bg-gradient-to-t from-emerald-300 to-sky-400 py-1.5 rounded-full absolute"
-                      style={{
-                        top: hobby.top,
-                        left: hobby.left
-                      }}
-                    >
-                      <span className="font-medium text-gray-950">{hobby.name}</span>
-                      <span>{hobby.emoji}</span>
-                    </div>
-                  ))
-                }
-              </div>
+              <Hobbies />
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
@@ -122,7 +57,9 @@ const About = () => {
                 alt="map"
                 className="object-cover object-left-top w-full h-full"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-t from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-t custom-gradient-bg -z-20 animate-ping [animation-duration:2s]"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-t custom-gradient-bg -z-10"></div>
                 <Image
                   src={memoji}
                   alt="memoji"
