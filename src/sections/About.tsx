@@ -10,7 +10,7 @@ import Hobbies from "@/components/Hobbies";
 
 const About = () => {
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-16 lg:py-20" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"

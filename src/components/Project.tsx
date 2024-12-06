@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Card from "./Card";
 import CheckCircle from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import LinkPreviewWrapper from "./LinkPreviewWrapper";
 
 type TProjectProps = {
     idx: number;
@@ -15,7 +16,7 @@ type TProjectProps = {
         }[];
         link: string;
         image: StaticImageData;
-    }
+    };
 };
 
 const Project = ({ idx, project }: TProjectProps) => {
@@ -43,12 +44,15 @@ const Project = ({ idx, project }: TProjectProps) => {
                             </li>
                         ))}
                     </ul>
-                    <a href={project.link}>
-                        <button className="h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6 bg-white text-gray-950">
-                            <span>Visit Live Site</span>
-                            <ArrowUpRight className="size-4" />
-                        </button>
-                    </a>
+                    <LinkPreviewWrapper
+                        url={project.link}
+                        width={340}
+                        height={215}
+                        className="h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6 bg-white text-gray-950"
+                    >
+                        <span>Visit Live Site</span>
+                        <ArrowUpRight className="size-4" />
+                    </LinkPreviewWrapper>
                 </div>
                 <div className="relative">
                     <Image

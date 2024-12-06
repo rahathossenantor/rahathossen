@@ -1,4 +1,5 @@
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const socials = [
   {
@@ -33,15 +34,14 @@ const Footer = () => {
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {
               socials.map(social => (
-                <a
+                <LinkPreviewWrapper
                   key={social.id}
-                  href={social.link}
-                  target="_blank"
-                  className="inline-flex items-center gap-1.5"
+                  url={social.link}
+                  className="inline-flex items-center gap-1.5 text-white"
                 >
                   <span className="font-semibold">{social.name}</span>
                   <ArrowUpRight className="size-4" />
-                </a>
+                </LinkPreviewWrapper>
               ))
             }
           </nav>

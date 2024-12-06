@@ -15,7 +15,7 @@ const projects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "",
+    link: "https://rahathossen.me",
     image: darkSaasLandingPage,
   },
   {
@@ -28,7 +28,7 @@ const projects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "",
+    link: "https://rahathossen.com",
     image: lightSaasLandingPage,
   },
   {
@@ -41,7 +41,7 @@ const projects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "",
+    link: "https://rahathossenantor.github.io/lambda",
     image: aiStartupLandingPage,
   },
 ];

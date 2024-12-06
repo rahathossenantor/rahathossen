@@ -1,9 +1,10 @@
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import grain from "@/assets/images/grain.jpg";
+import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const Contact = () => {
   return (
-    <section className="pt-12 pb-16 lg:pt-20 lg:pb-24" id="contacts">
+    <section className="pt-12 pb-16 lg:pt-20 lg:pb-24" id="contact">
       <div className="container">
         <div className="bg-gradient-to-r custom-gradient-bg text-gray-900 py-8 px-10 text-center md:text-left rounded-xl relative overflow-hidden z-0">
           <div
@@ -23,10 +24,13 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <button className="bg-gray-900 border border-gray-900 text-white h-12 px-6 inline-flex items-center gap-2 rounded-xl w-max">
+              <LinkPreviewWrapper
+                url="https://www.linkedin.com/in/rahathossenantor"
+                className="bg-gray-900 border border-gray-900 text-white h-12 px-6 inline-flex items-center gap-2 rounded-xl w-max"
+              >
                 <span className="font-semibold text-nowrap">Contact Me</span>
                 <ArrowUpRight className="size-4" />
-              </button>
+              </LinkPreviewWrapper>
             </div>
           </div>
         </div>

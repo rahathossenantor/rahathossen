@@ -5,10 +5,12 @@ import Star from "@/assets/icons/star.svg";
 import Sparkle from "@/assets/icons/sparkle.svg";
 import memoji from "@/assets/images/memoji-computer.png";
 import grain from "@/assets/images/grain.jpg";
+import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
 
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none">
         <div
@@ -127,17 +129,23 @@ const Hero = () => {
           <p className="text-center mt-4 text-white/60 md:text-lg">I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
-          <button className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl">
+          <Link
+            href="#projects"
+            className="inline-flex items-center gap-2 border border-white/15 h-12 px-6 rounded-xl"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋</span>
-            <a href="https://www.linkedin.com/in/rahathossenantor" target="_blank" className="font-semibold">Let&apos;s Connect</a>
-          </button>
+          </Link>
+          <LinkPreviewWrapper
+            url="https://www.linkedin.com/in/rahathossenantor"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+          >
+            <span className="font-semibold">Let&apos;s Connect</span>
+            <span>🔗</span>
+          </LinkPreviewWrapper>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
