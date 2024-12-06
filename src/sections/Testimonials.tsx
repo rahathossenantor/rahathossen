@@ -64,7 +64,7 @@ const Testimonials = () => {
                     testimonials.map((testimonial) => (
                       <Card
                         key={testimonial.id}
-                        className="max-w-xs md:max-w-md md:p-8 hover:-rotate-3 transition duration-300"
+                        className="max-w-xs p-6 md:max-w-md md:p-8 hover:-rotate-3 transition duration-300"
                       >
                         <div className="flex items-center gap-4">
                           <div className="size-14 rounded-full bg-gray-700 inline-flex items-center justify-center flex-shrink-0">
